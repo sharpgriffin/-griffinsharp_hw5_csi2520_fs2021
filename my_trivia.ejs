@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="public/css/styling3.css">
+        <title>
+            Griffin Sharp Portfolio
+        </title>
+
+    </head>
+    <body>
+        
+        <header>
+            
+           
+            <li><a href="/my_resume">Resume</a></li>
+            <li><a href="/">Home page</a></li>
+            <li><a href="/my_fun_facts">Fun Facts</a></li>
+            
+            <li><a href="/my_trivia">Trivia</a></li>
+        
+          
+    </header>
+    <div>
+        <h1>Trivia</h1>
+        </div>
+        
+        Q1. where is the Great Barrier Reef located?<br>
+        <input type="radio" name="question1" id="correct1"> Australia<br>
+        <input type="radio" name="question1"> United States<br>
+        <input type="radio" name="question1"> China<br>
+        <input type="radio" name="question1"> United Kingdom<br>
+
+        Q2. Which house was Harry Potter almost sorted into?<br>
+        <input type="radio" name="question2"> Ravenclaw<br>
+        <input type="radio" name="question2" id="correct2"> Gryffindor<br>
+        <input type="radio" name="question2"> Hufflepuff<br>
+        <input type="radio" name="question2"> Slytherin<br>
+
+        Q3. The Olympics are held every how many years? <br>
+        <input type="radio" name="question3"> 1<br>
+        <input type="radio" name="question3" id="correct3"> 4<br>
+        <input type="radio" name="question3"> 3<br>
+        <input type="radio" name="question3"> 2<br>
+
+        Q4. Which fictional city is the home of Batman?<br>
+        <input type="radio" name="question4" id="correct4"> Gotham<br>
+        <input type="radio" name="question4"> Detroit<br>
+        <input type="radio" name="question4"> Metropolis<br>
+        <input type="radio" name="question4"> Central City<br>
+
+        Q5.Babe Ruth is associated with which sport?<br>
+        <input type="radio" name="question5" id="correct5"> Baseball<br>
+        <input type="radio" name="question5"> Soccer<br>
+        <input type="radio" name="question5"> Hockey<br>
+        <input type="radio" name="question5"> Golf<br>
+
+        <input type="submit" name="submit" value="submitTrivia" onclick="result()">
+        <script type="text/javascript">
+            function result(){
+                
+                var score=0;
+                if (document.getElementById('correct1').checked)
+                {
+                    score++;
+                }
+                if (document.getElementById('correct2').checked)
+                {
+                    score++;
+                }
+                if (document.getElementById('correct3').checked)
+                {
+                    score++;
+                }
+                if (document.getElementById('correct4').checked)
+                {
+                    score++;
+                }
+                if (document.getElementById('correct5').checked)
+                {
+                    score++;
+                }
+                
+                alert("your score is:"+score);
+            }
+        </script>
+
+       
+
+         <hr>
+         <footer>
+             &copy; 2021, griffinsharp@oakland.edu
+           </footer>
+           <script src='data.js' type='text/javascript'></script> 
+    </body>
+</html>
